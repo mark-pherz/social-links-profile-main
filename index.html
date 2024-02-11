@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <style>
+      :root {
+        --color-white: hsl(0, 0%, 100%);
+        --color-grey: hsl(0, 0%, 20%);
+        --color-dark-grey: hsl(0, 0%, 12%);
+        --color-off-black: hsl(0, 0%, 8%);
+        --color-green: hsl(75, 94%, 57%);
+      }
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 14px;
+      }
+      body {
+        width: 100%;
+        min-height: 100vh;
+        font-family: "Inter", sans-serif;
+        background-color: var(--color-off-black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #card {
+        width: 320px;
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-dark-grey);
+        padding: 22px;
+        border-radius: 12px;
+      }
+      #avatar {
+        border-radius: 50%;
+        width: 80px;
+        margin-bottom: 20px;
+      }
+
+      #name {
+        color: var(--color-white);
+        font-weight: 500;
+        font-size: 1.6em;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+
+      #location {
+        color: var(--color-green);
+        font-size: 0.95em;
+        margin-bottom: 20px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      #occupation {
+        color: var(--color-white);
+        margin-bottom: 20px;
+        font-size: 0.875em;
+        text-align: center;
+      }
+
+      a.link {
+        display: block;
+        background-color: var(--color-grey);
+        color: var(--color-white);
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        padding: 12px 0;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+
+      a.link:hover {
+        background-color: var(--color-green);
+        color: var(--color-grey);
+      }
+
+      a.link:not(:last-child) {
+        margin-bottom: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="card">
+      <img
+        id="avatar"
+        src="./assets/images/avatar-jessica.jpeg"
+        alt="ebony brat" />
+      <h1 id="name">Jessica Randall</h1>
+      <h2 id="location">London, United Kindom</h2>
+      <p id="occupation">"Front-end developer and avid reader."</p>
+      <a href="#" class="link"> GitHub </a>
+      <a href="#" class="link"> Frontend Mentor </a>
+      <a href="#" class="link"> LinkedIn </a>
+      <a href="#" class="link"> Twitter </a>
+      <a href="#" class="link"> Instagram </a>
+    </main>
+  </body>
+</html>
